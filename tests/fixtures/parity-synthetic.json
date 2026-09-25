@@ -1,0 +1,12 @@
+{
+  "height": 120,
+  "width": 144,
+  "count": 37,
+  "params": {
+    "t_fg": 0.5,
+    "t_marker": 0.42,
+    "t_contour": 0.5,
+    "min_marker": 4,
+    "min_area": 12
+  }
+}

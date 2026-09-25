@@ -1,0 +1,95 @@
+[
+  {
+    "id": "he-carcinoma",
+    "title": "Tumour cell clusters, H&E",
+    "description": "Clusters of pleomorphic nuclei with vesicular chromatin and nucleoli in fibrous stroma.",
+    "stain": "he",
+    "mpp": 0.5,
+    "src": "/samples/he-carcinoma.jpg",
+    "thumb": "/samples/he-carcinoma.thumb.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "Synthetic (Karyon generator v2, seed 30000039, unseen during training)",
+    "groundTruth": {
+      "nuclei": 270,
+      "positivePct": null
+    }
+  },
+  {
+    "id": "he-glands",
+    "title": "Glandular epithelium, H&E",
+    "description": "Glands lined by columnar cells with basal, elongated nuclei around a lumen.",
+    "stain": "he",
+    "mpp": 0.5,
+    "src": "/samples/he-glands.jpg",
+    "thumb": "/samples/he-glands.thumb.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "Synthetic (Karyon generator v2, seed 30000077, unseen during training)",
+    "groundTruth": {
+      "nuclei": 226,
+      "positivePct": null
+    }
+  },
+  {
+    "id": "he-stroma-til",
+    "title": "Stroma with lymphocytes, H&E",
+    "description": "Collagen-rich stroma with spindle fibroblasts and a lymphocytic infiltrate.",
+    "stain": "he",
+    "mpp": 0.5,
+    "src": "/samples/he-stroma-til.jpg",
+    "thumb": "/samples/he-stroma-til.thumb.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "Synthetic (Karyon generator v2, seed 30000079, unseen during training)",
+    "groundTruth": {
+      "nuclei": 214,
+      "positivePct": null
+    }
+  },
+  {
+    "id": "ihc-ki67-high",
+    "title": "Ki-67 high proliferation, IHC",
+    "description": "Nuclear DAB staining in a highly proliferative region, hematoxylin counterstain.",
+    "stain": "ihc",
+    "mpp": 0.5,
+    "src": "/samples/ihc-ki67-high.jpg",
+    "thumb": "/samples/ihc-ki67-high.thumb.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "Synthetic (Karyon generator v2, seed 30000081, unseen during training)",
+    "groundTruth": {
+      "nuclei": 491,
+      "positivePct": 76.4
+    }
+  },
+  {
+    "id": "ihc-ki67-low",
+    "title": "Ki-67 low proliferation, IHC",
+    "description": "Mostly negative nuclei with scattered DAB-positive cells.",
+    "stain": "ihc",
+    "mpp": 0.5,
+    "src": "/samples/ihc-ki67-low.jpg",
+    "thumb": "/samples/ihc-ki67-low.thumb.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "Synthetic (Karyon generator v2, seed 30000084, unseen during training)",
+    "groundTruth": {
+      "nuclei": 126,
+      "positivePct": 11.9
+    }
+  },
+  {
+    "id": "real-ihc-colon",
+    "title": "Colonic glands, IHC (real)",
+    "description": "Real micrograph: membranous and cytoplasmic DAB (FHL2) with hematoxylin-counterstained nuclei. The marker is not nuclear, so few nuclei should score positive. A domain-shift stress test.",
+    "stain": "ihc",
+    "mpp": 0.5,
+    "src": "/samples/real-ihc-colon.jpg",
+    "thumb": "/samples/real-ihc-colon.thumb.jpg",
+    "width": 512,
+    "height": 512,
+    "source": "scikit-image sample data (immunohistochemistry), Center for Microscopy and Molecular Imaging; no known copyright restrictions. Resolution unknown, 0.5 µm/px assumed",
+    "groundTruth": null
+  }
+]

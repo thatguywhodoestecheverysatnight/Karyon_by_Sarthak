@@ -1,0 +1,34 @@
+seed: 7
+threads: 2
+out: runs/unet_s
+data:
+  root: data/synth_v2
+  # Optional real-data folders (images/ + masks/), mixed into training, e.g.
+  #   folders: [{path: /data/monuseg, mpp: 0.25}]
+  folders: []
+  real_fraction: 0.5
+model:
+  channels: [16, 32, 64, 96, 128]
+  # init_from: checkpoints/karyon-nuclei-v1.pt   # uncomment to fine-tune the released model
+train:
+  iters: 6000
+  batch: 16
+  crop: 128
+  lr: 0.002
+  weight_decay: 0.0001
+  warmup: 200
+  ema: 0.998
+  log_every: 50
+  val_every: 1000
+  val_tiles: 64
+loss:
+  w_fg: 1.0
+  w_contour: 1.0
+  w_dist: 2.0
+  contour_pos_weight: 3.0
+postprocess:
+  t_fg: 0.5
+  t_marker: 0.42
+  t_contour: 0.5
+  min_marker: 4
+  min_area: 12
